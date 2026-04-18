@@ -1,0 +1,7 @@
+requests
+ddgs
+beautifulsoup4
+pandas
+openpyxl
+fpdf2
+pymongo
