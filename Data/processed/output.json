@@ -1,0 +1,18 @@
+[
+    {
+        "Shallow Copy": "Shallow Copy stores the references of objects to the original memory address.",
+        "Deep Copy": "Deep copy stores copies of the object\u2019s value."
+    },
+    {
+        "Shallow Copy": "Shallow Copy reflects changes made to the new/copied object in the original object.",
+        "Deep Copy": "Deep copy doesn\u2019t reflect changes made to the new/copied object in the original object."
+    },
+    {
+        "Shallow Copy": "Shallow Copy stores the copy of the original object and points the references to the objects.",
+        "Deep Copy": "Deep copy stores the copy of the original object and recursively copies the objects as well."
+    },
+    {
+        "Shallow Copy": "A shallow copy is faster.",
+        "Deep Copy": "Deep copy is comparatively slower."
+    }
+]

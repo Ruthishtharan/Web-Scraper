@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Is Python a compiled language or an interpreted language?",
+        "answer": "Please remember one thing, whether a language is compiled or interpreted or both is not defined in the language standard. In other words, it is not a properly of a programming language. Different Python distributions (or implementations) choose to do different things (compile or interpret or both).  However the most common implementations like CPython do both compile and interpret, but in different stages of its execution process. Compilation: When you write Python code and run it, the source code (.py files) is first compiled into an intermediate form called bytecode (.pyc files). This bytecode is a lower-level representation of your code, but it is still not directly machine code. It\u2019s something that the Python Virtual Machine (PVM) can understand and execute. Interpretation: After Python code is compiled into bytecode, it is executed by the Python Virtual Machine (PVM), which is an interpreter. The PVM reads the bytecode and executes it line-by-line at runtime, which is why Python is considered an interpreted language in practice. Some implementations, like PyPy, use Just-In-Time (JIT) compilation, where Python code is compiled into machine code at runtime for faster execution, blurring the lines between interpretation and compilation."
+    },
+    {
+        "question": "How can you concatenate two lists in Python?",
+        "answer": "We can concatenate two lists in Python using the +operator or the extend() method. 1. Using the + operator: This creates a new list by joining two lists together. Output [1, 2, 3, 4, 5, 6] 2. Using the extend() method: This adds all the elements of the second list to the first list in-place. Output [1, 2, 3, 4, 5, 6]"
+    },
+    {
+        "question": "Difference between for loop and while loop in Python",
+        "answer": "For loop : Used when we know how many times to repeat, often with lists, tuples, sets, or dictionaries. While loop : Used when we only have an end condition and don\u2019t know exactly how many times it will repeat. Output 0\n1\n2\n3\n4\n0\n1\n2\n3\n4"
+    },
+    {
+        "question": "How do you floor a number in Python?",
+        "answer": "To floor a number in Python, you can use the math.floor() function, which returns the largest integer less than or equal to the given number. floor() method in Python returns the floor of x i.e., the largest integer not greater than x. Also, The method ceil(x) in Python returns a ceiling value of x i.e., the smallest integer greater than or equal to x. Output 3"
+    },
+    {
+        "question": "What is the difference between / and // in Python?",
+        "answer": "/ represents precise division (result is a floating point number) whereas // represents floor division (result is an integer). For Example: Output 2\n2.5"
+    },
+    {
+        "question": "Is Indentation Required in Python?",
+        "answer": "Yes, indentation is required in Python. A Python interpreter can be informed that a group of statements belongs to a specific block of code by using Python indentation. Indentations make the code easy to read for developers in all programming languages but in Python, it is very important to indent the code in a specific order."
+    },
+    {
+        "question": "Can we Pass a function as an argument in Python?",
+        "answer": "Yes, Several arguments can be passed to a function, including objects, variables (of the same or distinct data types) and functions. Functions can be passed as parameters to other functions because they are objects. Higher-order functions are functions that can take other functions as arguments. Output 8 The add function is passed as an argument to apply_func, which applies it to 3 and 5."
+    },
+    {
+        "question": "What is a dynamically typed language?",
+        "answer": "In a dynamically typed language, the data type of a variable is determined at runtime , not at compile time. No need to declare data types manually; Python automatically detects it based on the assigned value. Examples of dynamically typed languages: Python, JavaScript. Examples of statically typed languages: C, C++, Java. Dynamically typed languages are easier and faster to code. Statically typed languages are usually faster to execute due to type checking at compile time. Example : Here, the type of x changes at runtime based on the assigned value hence it shows dynamic nature of Python."
+    },
+    {
+        "question": "What is pass in Python?",
+        "answer": "The pass statement is a placeholder that does nothing. It is used when a statement is syntactically required but no code needs to run. Commonly used when defining empty functions, classes or loops during development. Output Here, fun() does nothing, but the code stays syntactically correct."
+    },
+    {
+        "question": "How are arguments passed by value or by reference in Python?",
+        "answer": "Python\u2019s argument-passing model is neither \u201cPass by Value\u201d nor \u201cPass by Reference\u201d but it is \u201cPass by Object Reference\u201d. Depending on the type of object you pass in the function, the function behaves differently. Immutable objects show \u201cpass by value\u201d whereas mutable objects show \u201cpass by reference\u201d. You can check the difference between pass-by-value and pass-by-reference in the example below: Output Updated value after call_by_val: 12\nUpdated list after call_by_ref: ['E', 'D']"
+    },
+    {
+        "question": "What is a lambda function?",
+        "answer": "A lambda function is an anonymous function. This function can have any number of parameters but, can have just one statement. In the example, we defined a lambda function( upper ) to convert a string to its upper case using\u00a0upper(). Output GEEKSFORGEEKS"
+    },
+    {
+        "question": "What is List Comprehension? Give an Example.",
+        "answer": "List comprehension is a way to create lists using a concise syntax. It allows us to generate a new list by applying an expression to each item in an existing iterable (such as a list or range ). This helps us to write cleaner, more readable code compared to traditional looping techniques. For example , if we have a list of integers and want to create a new list containing the square of each element, we can easily achieve this using list comprehension. Output [4, 9, 16, 25]"
+    },
+    {
+        "question": "What are *args and **kwargs?",
+        "answer": "*args: The special syntax *args in function definitions is used to pass a variable number of arguments to a function. Python program to illustrate *args for a variable number of arguments: Output Hello\nWelcome\nto\nGeeksforGeeks **kwargs: The special syntax **kwargs in function definitions is used to pass a variable length argument list. We use the name kwargs with the double star **. Output s1 == Geeks\ns2 == for\ns3 == Geeks"
+    },
+    {
+        "question": "What is a break, continue and pass in Python?",
+        "answer": "Break statement is used to terminate the loop or statement in which it is present. After that, the control will pass to the statements that are present after the break statement, if available. Continue is also a loop control statement just like the break statement. continue statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop. Pass means performing no operation or in other words, it is a placeholder in the compound statement, where there should be a blank left and nothing has to be written there."
+    },
+    {
+        "question": "What is the difference between a Set and Dictionary?",
+        "answer": "A Python Set is an unordered collection data type that is iterable, mutable and has no duplicate elements. Python\u2019s set class represents the mathematical notion of a set. Syntax : Defined using curly braces {} or the set() function. my_set = {1, 2, 3} Dictionary in Python is an ordered (since Py 3.7) [unordered (Py 3.6 & prior)] collection of data values, used to store data values like a map, which, unlike other Data Types that hold only a single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized. Syntax : Defined using curly braces {} with key-value pairs. my_dict = {\"a\": 1, \"b\": 2, \"c\": 3}"
+    },
+    {
+        "question": "What are Built-in data types in Python?",
+        "answer": "The following are the standard or built-in data types in Python: Numeric: The numeric data type in Python represents the data that has a numeric value. A numeric value can be an integer, a floating number, a Boolean , or even a complex number. Sequence Type: The sequence Data Type in Python is the ordered collection of similar or different data types. There are several sequence types in Python: Python String Python List Python Tuple Python range Mapping Types: In Python, hashable data can be mapped to random objects using a mapping object. There is currently only one common mapping type, the dictionary and mapping objects are mutable. Python Dictionary Set Types: In Python, a Set is an unordered collection of data types that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements."
+    },
+    {
+        "question": "What is the difference between a Mutable datatype and an Immutable data type?",
+        "answer": "Mutable data types can be edited i.e., they can change at runtime. Eg \u2013 List, Dictionary, etc. Immutable data types can not be edited i.e., they can not change at runtime. Eg \u2013 String, Tuple, etc."
+    },
+    {
+        "question": "What is a Variable Scope in Python?",
+        "answer": "The location where we can find a variable and also access it if required is called the scope of a variable . Python Local variable: Local variables are those that are initialized within a function and are unique to that function. A local variable cannot be accessed outside of the function. Python Global variables: Global variables are the ones that are defined and declared outside any function and are not specified to any function. Module-level scope: It refers to the global objects of the current module accessible in the program. Outermost scope: It refers to any built-in names that the program can call. The name referenced is located last among the objects in this scope."
+    },
+    {
+        "question": "How is a dictionary different from a list?",
+        "answer": "A list is an ordered collection of items accessed by their index, while a dictionary is an unordered collection of key-value pairs accessed using unique keys. Lists are ideal for sequential data, whereas dictionaries are better for associative data. For example, a list can store [10, 20, 30], whereas a dictionary can store {\"a\": 10, \"b\": 20, \"c\": 30}."
+    },
+    {
+        "question": "What is docstring in Python?",
+        "answer": "Python documentation strings (or docstrings ) provide a convenient way of associating documentation with Python modules, functions, classes and methods. Declaring Docstrings: The docstrings are declared using \u201d\u2019triple single quotes\u201d\u2019 or \u201c\u201d\u201dtriple double quotes\u201d\u201d\u201d just below the class, method, or function declaration. All functions should have a docstring. Accessing Docstrings: The docstrings can be accessed using the __doc__ method of the object or using the help function."
+    }
+]
